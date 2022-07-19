@@ -1,0 +1,172 @@
+/*---------------------
+Google font poppins use 
+----------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Lobster+Two:wght@700&family=Macondo&family=Open+Sans&family=Poppins:wght@400;500;700&display=swap');
+
+/*--------------
+body style start 
+---------------*/
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* header section style start */
+.container{
+    display: flex;
+    column-gap: 24px;
+    width: 1321px;
+    height: 646px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    border-radius: 30px;
+
+    background: #161616;
+}
+/* header text style start */
+.header-box{
+    width: 531px;
+    height: 424px;
+    margin-top: 111px;
+    margin-bottom: 111px;
+    margin-left: 106px;
+    border-radius: 5px;
+}
+.header-text{
+    width: 531px;
+    height: 240px;
+    margin-bottom: 20px;
+
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 80px;
+}
+.p-text{
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 36px;
+}
+/* header text style end */
+
+/* button and icon style start */
+.button-icon{
+    display: flex;
+    width: 150px;
+    padding: 16px;
+    border-radius: 5px;
+    column-gap: 10px;
+
+    text-align: center;
+    background: #DD0000;
+}
+.button-icon a{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.46px;
+    text-decoration: none;
+    color: white;
+}
+.feild{
+    margin-top: 4px;
+    color: white;
+}
+/* button and icon style end */
+
+/* image style start */
+.banner-img{
+    width: 100%;
+    margin-top: 35.5px;
+}
+.banner-img img{
+    width: 580px;
+}
+/* image style end */
+/* header section style end */
+
+/* sidebar style start */
+.match-info{
+    display: flex;
+    column-gap: 24px;
+    margin-top: 130px;
+}
+.match{
+    width: 312px;
+    height: 312px;
+    margin-left: 100px;
+    border-radius: 10px;
+    border: 1px solid red;
+    background-color: #161616;
+}
+.time{
+    display: grid;
+    
+    width: 252px;
+    height: 252px;
+    border-radius: 10px;
+}
+.common{
+    width: 252px;
+    height: 64px;
+    margin-left: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #161616;
+    background-color: white;
+}
+.common > p{
+    text-align: center;
+}
+#other-color{
+    background-color: #DD0000;
+}
+/* sidebar style end */
+
+/* match-schedule style start */
+.match-schedule{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.team{
+    width: 312px;
+    height: 362px;
+    
+    border-radius: 10px;
+    box-shadow:0px 0px 0px 1px #E8E8E8 inset;
+}
+.match-schedule{
+    width: 984px;
+    height: 1134px;
+}
+.ipc{
+    margin-left: 10px;
+}
+.button > p{
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    border: 1px solid #161616;
+    color: #161616;
+}
+.team-info{
+    color: #161616;
+    font-weight: 600;
+    Size: 18px;
+    Line-height: 27px;
+}
+.icons{
+    display: flex;
+    gap: 30px;
+}
+.icons .icon span{
+    color: #161616;
+    font-size: 16px;
+    margin-left: 10px;
+}
