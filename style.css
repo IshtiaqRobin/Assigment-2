@@ -9,6 +9,7 @@ body style start
 body{
     font-family: 'Poppins', sans-serif;
 }
+/* main section styles start */
 /* header section style start */
 .container{
     display: flex;
@@ -94,12 +95,10 @@ body{
     height: 312px;
     margin-left: 100px;
     border-radius: 10px;
-    border: 1px solid red;
     background-color: #161616;
 }
 .time{
     display: grid;
-    
     width: 252px;
     height: 252px;
     border-radius: 10px;
@@ -121,6 +120,7 @@ body{
     text-align: center;
 }
 #other-color{
+    color: white;
     background-color: #DD0000;
 }
 /* sidebar style end */
@@ -129,6 +129,8 @@ body{
 .match-schedule{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    row-gap: 24px;
+    width: 1000px;
 }
 .team{
     width: 312px;
@@ -136,10 +138,6 @@ body{
     
     border-radius: 10px;
     box-shadow:0px 0px 0px 1px #E8E8E8 inset;
-}
-.match-schedule{
-    width: 984px;
-    height: 1134px;
 }
 .ipc{
     margin-left: 10px;
@@ -169,4 +167,43 @@ body{
     color: #161616;
     font-size: 16px;
     margin-left: 10px;
+}
+/* match-schedule style end */
+/* main section styles end */
+
+/* footer section styles start */
+.footer{
+    width: 1600px;
+    height: 444px;
+    background: #161616;
+}
+.goal{
+    /* width: 95px;
+    height: 60px; */
+    margin-top: 130px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    
+    color: white;
+}
+hr{
+    width: 1320px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer > p{
+    text-align: center;
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 898px;
+    height: 24px;
+    margin-left: 330px;
+    margin-top: 50px;
+}
+.footer-nav a{
+    text-decoration: none;
+    color: #B9B9B9;
 }
