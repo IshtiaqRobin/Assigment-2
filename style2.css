@@ -57,16 +57,42 @@ body{
     padding: 16px;
     border-radius: 5px;
     column-gap: 10px;
-
+    color: white;
     text-align: center;
+    font-size: 20px;
     background: #DD0000;
+/* new add */
+    transition: 0.5s;
+    cursor: pointer;
 }
 .button-icon a{
-    font-size: 20px;
     font-weight: 400;
     line-height: 23.46px;
     text-decoration: none;
     color: white;
+/* new add */
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+/* new add */
+.button-icon a:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.3s;
+}
+/* new add */
+.button-icon:hover a {
+    padding-right: 25px;
+}
+  /* new add */
+.button-icon:hover a:after {
+    opacity: 1;
+    right: 0;
 }
 .feild{
     margin-top: 4px;
@@ -96,6 +122,7 @@ body{
     height: 312px;
     margin-left: 100px;
     border-radius: 10px;
+
     background-color: #161616;
 }
 .time{
@@ -110,10 +137,10 @@ body{
     margin-left: 30px;
     margin-top: 30px;
     border-radius: 10px;
+
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-
     color: #161616;
     background-color: white;
 }
@@ -133,49 +160,54 @@ body{
     row-gap: 24px;
     width: 1000px;
 }
-.team{
+.country{
     width: 312px;
-    height: 362px;
-    
+    height: 242px;
     border-radius: 10px;
     box-shadow:0px 0px 0px 1px #E8E8E8 inset;
 }
-.ipc{
-    margin-left: 10px;
-}
-.button > p{
-    width: 100px;
-    height: 25px;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    text-align: center;
-    border: 1px solid #161616;
-    color: #161616;
-}
-.team-info{
-    color: #161616;
-    font-weight: 600;
-    Size: 18px;
-    Line-height: 27px;
-}
-.icons{
+.team-vs-team{
+    position: absolute;
     display: flex;
-    gap: 30px;
+    justify-content: space-evenly;
+    width: 252px;
+    height: 56.18px;
+    margin-top: 53px;
+    margin-left: 30px;
 }
-.icons .icon span{
+.vs{
     color: #161616;
+    font-weight: 700;
     font-size: 16px;
-    margin-left: 10px;
 }
+.team-name{
+    position: absolute;
+    flex: none;
+    margin-top: 55px;
+}
+.team-name > span{
+    display: block;
+    color: #4D4D4D;
+    margin-top: -7px;
+    text-align: center;
+}
+.team-name > h3{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #161616;
+}
+
+
 /* match-schedule style end */
 /* main section styles end */
 
 /* footer section styles start */
+
 .footer{
     position: absolute;
-    width: 1500px;
+    width: 100%;
     height: 444px;
     margin-top: 130px;
     background: #161616;
@@ -188,11 +220,11 @@ body{
 .goal{
     height: 60px;
     margin-top: 130px;
+    text-align: center;
     
     font-weight: 600;
     font-size: 40px;
     line-height: 60px;
-    
     color: white;
 }
 hr{
