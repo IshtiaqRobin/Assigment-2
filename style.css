@@ -175,7 +175,7 @@ body{
 /* footer section styles start */
 .footer{
     position: absolute;
-    width: 1600px;
+    width: 1500px;
     height: 444px;
     margin-top: 130px;
     background: #161616;
@@ -186,7 +186,6 @@ body{
     text-align: center;
 }
 .goal{
-    
     height: 60px;
     margin-top: 130px;
     
