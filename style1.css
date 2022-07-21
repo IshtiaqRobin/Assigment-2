@@ -460,6 +460,9 @@ media query section star
 /* Mobile Devices Website style end */
 
 @media screen and (min-width: 689px) and (max-width: 992px) {
+    body{
+        height: 3840px;
+    }
     .container{
         display: flex;
         width: 734px;
@@ -600,4 +603,57 @@ media query section star
     .team img{
         width: 357px;
     }
+    .footer {
+        position: absolute;
+        
+        width: 834px;
+        height: 345px;
+        margin-top: 130px;
+        background: var(--main-color);
+        text-align: center;
+    }
+    
+    .footer-text {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    
+    .goal {
+        height: 60px;
+        margin-top: 130px;
+        text-align: center;
+    
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 60px;
+        color: var(--secondery-color);
+    }
+    
+    hr {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 1320px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .footer>p {
+        text-align: center;
+    }
+    
+    .footer-nav {
+        display: flex;
+        justify-content: space-between;
+        width: 898px;
+        height: 24px;
+        margin-left: 330px;
+        margin-bottom: 130px;
+    }
+    
+    .footer-nav a {
+        text-decoration: none;
+        color: #B9B9B9;
+    }
+
+
+
 }
