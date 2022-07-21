@@ -3,16 +3,20 @@ Google font poppins use
 ----------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Lobster+Two:wght@700&family=Macondo&family=Open+Sans&family=Poppins:wght@400;500;700&display=swap');
 
-/*--------------
-body style start 
----------------*/
-body{
+/* selects font color use shortcut */
+:root {
+    --main-color: #161616;
+    --secondery-color: white;
+}
+
+/* body style start */
+body {
     margin: 0%;
     font-family: 'Poppins', sans-serif;
 }
-/* main section styles start */
-/* header section style start */
-.container{
+
+/* main and header section styles start */
+.container {
     display: flex;
     column-gap: 24px;
     width: 1321px;
@@ -22,10 +26,11 @@ body{
     margin-top: 50px;
     border-radius: 30px;
 
-    background: #161616;
+    background: var(--main-color);
 }
+
 /* header text style start */
-.header-box{
+.header-box {
     width: 531px;
     height: 424px;
     margin-top: 111px;
@@ -33,50 +38,54 @@ body{
     margin-left: 106px;
     border-radius: 5px;
 }
-.header-text{
+
+.header-text {
     width: 531px;
     height: 240px;
     margin-bottom: 20px;
 
-    color: white;
+    color: var(--secondery-color);
     font-size: 70px;
     font-weight: 700;
     line-height: 80px;
 }
-.p-text{
-    color: white;
+
+.p-text {
+    color: var(--secondery-color);
     margin-top: 20px;
     margin-bottom: 36px;
 }
+
 /* header text style end */
 
 /* button and icon style start */
-.button-icon{
+.button-icon {
     display: flex;
     width: 150px;
     padding: 16px;
     border-radius: 5px;
     column-gap: 10px;
-    color: white;
+    color: var(--secondery-color);
     text-align: center;
     font-size: 20px;
     background: #DD0000;
-/* new add */
     transition: 0.5s;
     cursor: pointer;
+    justify-content: space-around;
 }
-.button-icon a{
+
+.button-icon a {
     font-weight: 400;
     line-height: 23.46px;
     text-decoration: none;
-    color: white;
-/* new add */
+    color: var(--secondery-color);
     cursor: pointer;
+    text-align: center;
     display: inline-block;
     position: relative;
     transition: 0.5s;
 }
-/* new add */
+
 .button-icon a:after {
     content: '\00bb';
     position: absolute;
@@ -85,174 +94,184 @@ body{
     right: -20px;
     transition: 0.3s;
 }
-/* new add */
+
 .button-icon:hover a {
     padding-right: 25px;
-  }
-  /* new add */
+}
+
 .button-icon:hover a:after {
     opacity: 1;
     right: 0;
-  }
-.feild{
-    margin-top: 4px;
-    color: white;
 }
+
 /* button and icon style end */
 
 /* image style start */
-.banner-img{
+.banner-img {
     width: 100%;
     margin-top: 35.5px;
 }
-.banner-img img{
+
+.banner-img img {
     width: 580px;
 }
-/* image style end */
-/* header section style end */
 
-/* sidebar style start */
-.match-info{
+/* image style and header
+style end */
+
+/* link button style start */
+.match-info {
     display: flex;
-    column-gap: 24px;
     margin-top: 130px;
 }
-.match{
-    display: grid;
 
-
+.match {
     width: 312px;
     height: 312px;
     margin-left: 100px;
-    
+    margin-right: 24px;
+    background: var(--main-color);
     border-radius: 10px;
-
-    background-color: #161616;
 }
-.time{
+
+.time {
     display: grid;
+    row-gap: 30px;
     width: 252px;
     height: 252px;
-    margin-right: 60px;
-    border-radius: 10px;
+    padding: 30px;
 }
-.common{
+
+.link {
     width: 252px;
     height: 64px;
-    margin-left: 30px;
-    margin-top: 30px;
+    background: var(--secondery-color);
     border-radius: 10px;
+}
 
+.ancor {
+    display: block;
+    color: var(--main-color);
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    color: #161616;
-    background-color: white;
+    margin-top: 17px;
+    text-decoration: none;
+    text-align: center;
 }
 
-.common p{
-    text-align: center;
-}
-.common a{
-    position: absolute;
-    text-decoration: none;
-    color: black;
-    margin-left: 40px;
-    margin-top: 18px;
-    text-align: center;
-}
-#other-color{
-    color: white;
+#other-color {
+    color: var(--secondery-color);
     background-color: #DD0000;
 }
 
-/* sidebar style end */
+#color {
+    color: var(--secondery-color);
+}
+
+/* link button style end */
 
 /* match-schedule style start */
-.match-schedule{
+.match-schedule {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 24px;
     width: 1000px;
 }
-.team{
+
+.team {
     width: 312px;
     height: 362px;
     margin-right: 24px;
-    
+
     border-radius: 10px;
-    box-shadow:0px 0px 0px 1px #E8E8E8 inset;
+    box-shadow: 0px 0px 0px 1px #E8E8E8 inset;
 }
-.ipc{
+
+.ipc {
     margin-left: 10px;
 }
-.button > p{
-    width: 100px;
-    height: 25px;
-    border-radius: 5px;
 
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
+.button {
     text-align: center;
-    border: 1px solid #161616;
-    color: #161616;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 5px;
+    padding: 4px 16px;
+    margin: 10px 10px;
+
+
+    background-color: var(--secondery-color);
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    cursor: pointer;
 }
-.team-info{
-    color: #161616;
+
+.team-info {
+    color: var(--main-color);
     font-weight: 600;
     Size: 18px;
     Line-height: 27px;
 }
-.icons{
+
+.icons {
     display: flex;
     gap: 30px;
+    margin-left: 10px;
 }
-.icons .icon span{
-    color: #161616;
+
+.icon {
+    color: rgba(22, 22, 22, 0.7);
+}
+
+.icons .icon span {
+    color: rgba(22, 22, 22, 0.7);
     font-size: 16px;
     margin-left: 10px;
 }
-/* match-schedule style end */
+
 /* main section styles end */
 
 /* footer section styles start */
 
-
-/* ---------------------------- */
-.footer{
+.footer {
     position: absolute;
     width: 100%;
     height: 444px;
     margin-top: 130px;
-    background: #161616;
+    background: var(--main-color);
     text-align: center;
 }
-.footer-text{
+
+.footer-text {
     margin-bottom: 50px;
     text-align: center;
 }
-.goal{
+
+.goal {
     height: 60px;
     margin-top: 130px;
     text-align: center;
-    
+
     font-weight: 600;
     font-size: 40px;
     line-height: 60px;
-    color: white;
+    color: var(--secondery-color);
 }
-hr{
+
+hr {
     margin-top: 50px;
     margin-bottom: 50px;
     width: 1320px;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
-.footer > p{
+
+.footer>p {
     text-align: center;
 }
 
-.footer-nav{
+.footer-nav {
     display: flex;
     justify-content: space-between;
     width: 898px;
@@ -260,7 +279,183 @@ hr{
     margin-left: 330px;
     margin-bottom: 130px;
 }
-.footer-nav a{
+
+.footer-nav a {
     text-decoration: none;
     color: #B9B9B9;
+}
+
+/* footer section styles end */
+
+
+/*------------------------
+media query section star
+-------------------------*/
+
+@media only screen and (max-width: 688px) {
+    body{
+        margin: 0px;
+        width: 375px;
+        height: 4855px;
+        
+    }
+    .container{
+        display: grid;
+        width: 340px;
+        height: 472px;
+        margin-right: 17.5px;
+        margin-left: 17.5px;
+        margin-top: 44px;
+        border-radius: 10px;
+    }
+    .header-box{
+        flex: none;
+        width: 285px;
+        height: 178px;
+        margin-right: 27.5px;
+        margin-left: 27.5px;
+        margin-top: 28px;
+        margin-bottom: 21px;
+        border-radius: 5px;
+    }
+    .header-text{
+        width: 285px;
+        height: 66px;
+        margin-top: 0px;
+        margin-bottom: 8px;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 33px;
+        text-align: center;
+    }
+    .p-text{
+        width: 285px;
+        height: 48px;
+    }
+    p.p-text {
+        white-space: nowrap; 
+        width: 250px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border: 1px solid #000000;
+      }
+      
+      p.p-text:hover {
+        overflow: visible;
+      }
+      .button-icon{
+        width: 161px;
+        height: 40px;
+        padding: 4px 9px;
+        margin-right: 46px;
+        margin-left: 46px;
+        margin-top: 0px;
+      }
+      .button-icon a{
+        margin-top: 7px;
+        height: 40px;
+      }
+      .banner-img{
+        width: 233px;
+        height: 245px;
+        margin-top: 0px;
+        margin-left: 52.5px;
+        margin-right: 52.5px;
+      }
+      .banner-img img{
+        width: 233px;
+        height: 245px;
+      }
+      .match-info{
+        display: grid;
+        margin: 0px;
+      }
+      .match-schedule{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .match{
+        width: 210px;
+        height: 176px;
+        margin-top: 0px;
+        margin-left: 78px;
+        margin-right: 78px;
+        background-color: white;
+      }
+      .time{
+        row-gap: 0px;
+        margin-top: 15px;
+        padding: 0px;
+        padding-right: 0px;
+        width: 212px;
+
+      }
+      div.link {
+          width: 210px;
+          height: 48px;
+          margin-left: 0px;
+          margin-right: 0px;
+          background: var(--secondery-color);
+          border: 2px solid #E8E8E8;
+          border-radius: 10px;
+      }
+      .ancor{
+        margin-top: 8px;
+        text-align: center;
+      }
+      #other-color{
+        margin-bottom: 50px;
+      }
+      .match-schedule{
+        margin-top: 44px;
+      }
+      .team{
+        width: 340px;
+        height: 388.69px;
+        margin-left: 17.5px;
+        margin-right: 17.5px;
+      }
+      .team img{
+        width: 340px;
+      }
+      .footer{
+        width: 375px;
+        height: 412px;
+        margin-top: 20px;
+      }
+      .goal{
+        width: 52px;
+        height: 33px;
+        margin-left: 130px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        font-weight: 600;
+                
+        font-size: 22px;
+        line-height: 33px;
+        text-align: center;
+        color: #FFFFFF;
+
+      }
+
+      .hr{
+        display: block;
+        width: 300px;
+        height: 0px;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+      }
+      .footer-nav{
+        display: grid;
+        row-gap: 20px;
+        margin-top: -15px;
+        margin-left: 0px;
+        margin-left: 120px;
+        width: 347px;
+      }
+
+
 }
